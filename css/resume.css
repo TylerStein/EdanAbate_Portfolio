@@ -1,0 +1,47 @@
+.summary {
+    font-size: 20px;
+}
+
+.subheader {
+    margin-top: 42px;
+    font-size: 24px;
+}
+
+.subcontent {
+    margin-top: 12px;
+    padding-right: 10%;
+    font-size: 20px;
+}
+
+.subcontent ul {
+    padding-inline-start: 18px;
+}
+
+.subcontent li {
+    list-style-type: none;
+    padding: 2px 0;
+}
+
+.subcontent li::before {
+    content: "\2014\a0";
+    text-indent: -5px;
+}
+
+.content-border {
+    border-left: 2px solid #363636;
+    padding-left: 12px;
+}
+
+.button-bar button {
+    margin-bottom: 12px;
+    width: 192px;
+    height: 42px;
+    border: none;
+    background-color: #363636;
+    color: #FFF;
+    font-size: 20px;
+}
+
+.button-bar button:hover {
+    border: 2px solid #E80C7A;
+}
