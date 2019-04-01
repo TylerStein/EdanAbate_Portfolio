@@ -45,3 +45,10 @@
 .button-bar button:hover {
     border: 2px solid #E80C7A;
 }
+
+.center-column {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center
+}

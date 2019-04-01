@@ -7,14 +7,28 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
     <link href="css/navbar.css" rel="stylesheet">
-    <link href="css/contact.css" rel="stylesheet">
+    <link href="css/gallery_new.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/brands.css"
+        integrity="sha384-n9+6/aSqa9lBidZMRCQHTHKJscPq6NW4pCQBiMmHdUCvPN8ZOg2zJJTkC7WIezWv" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/fontawesome.css"
+        integrity="sha384-vd1e11sR28tEK9YANUtpIOdjGW14pS87bUBuOIoBILVWLFnS+MCX9T6MMf0VdPGq" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/galleryitem.js"></script>
 </head>
 
 <body>
     <div class="navbar background-gray">
         <div class="navheader color-white">
             <span class="color-white font-bold">Edan</span> <span class="color-red">Abate</span>
+            <div class="navicons">
+                <a href="https://www.instagram.com/edanabate/"><i class="fab fa-instagram"></i></a>
+                <a href="https://abate_latte.artstation.com/"><i class="fab fa-artstation"></i></a>
+                <a href="https://www.linkedin.com/in/edan-abate"><i class="fab fa-linkedin"></i></a>
+            </div>
         </div>
         <div class="navitems">
             <div class="navitem"><a class="font-bold" href="./index.html">Gallery</a></div>
@@ -22,11 +36,57 @@
             <div class="navitem"><a href="./contact.html">Contact</a></div>
         </div>
     </div>
-    <div class="content center-column background-white">
-        <div class="header font-light color-blue">Gallery Coming Soon!</div>
-        <br />
-        <div class="font-light color-gray">Check this out in the meantime</div>
-        <div class="color-red"><a href="https://www.artstation.com/abate_latte"
-                class="dark">https://www.artstation.com/abate_latte</a></div>
+    <div class="content background-white">
+        <button class="arrow-prev arrow-button" aria-label="previous" role="button"><i class="arrow left"></i></button>
+        <button class="arrow-next arrow-button" aria-label="next" role="button"><i class="arrow right"></i></button>
+        <div class="carousel">
+            <div class="card-container">
+                <div class="card-header color-black">
+                    Super Cool Stuff
+                </div>
+                <div class="card-image">
+                    <img src="https://via.placeholder.com/256" />
+                </div>
+                <div class="card-sub color-black">
+                    <div class="card-tag background-red color-white">OptiTrack</div>
+                    <div class="card-tag background-red color-white">Maya</div>
+                    <div class="card-tag background-red color-white">OptiTrack</div>
+                    <div class="card-tag background-red color-white">Maya</div>
+                    <div class="card-tag background-red color-white">OptiTrack</div>
+                </div>
+            </div>
+
+            <div class="card-container">
+                <div class="card-header color-black">
+                    Super Cool Stuff
+                </div>
+                <div class="card-image">
+                    <img src="https://via.placeholder.com/256" />
+                </div>
+                <div class="card-sub color-black">
+                    <div class="card-tag background-red color-white">OptiTrack</div>
+                    <div class="card-tag background-red color-white">Maya</div>
+                    <div class="card-tag background-red color-white">OptiTrack</div>
+                    <div class="card-tag background-red color-white">Maya</div>
+                    <div class="card-tag background-red color-white">OptiTrack</div>
+                </div>
+            </div>
+
+            <div class="card-container">
+                <div class="card-header color-black">
+                    Super Cool Stuff
+                </div>
+                <div class="card-image">
+                    <img src="https://via.placeholder.com/256" />
+                </div>
+                <div class="card-sub color-black">
+                    <div class="card-tag background-red color-white">OptiTrack</div>
+                    <div class="card-tag background-red color-white">Maya</div>
+                    <div class="card-tag background-red color-white">OptiTrack</div>
+                    <div class="card-tag background-red color-white">Maya</div>
+                    <div class="card-tag background-red color-white">OptiTrack</div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>

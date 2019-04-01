@@ -13,6 +13,11 @@
     font-size: 38px;
 }
 
+.navicons {
+    font-size: 36px;
+    float: right;
+}
+
 .navitems {
     height: 32px;
     padding: 0 24px;
