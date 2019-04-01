@@ -3,7 +3,7 @@ $(document).ready(function() {
         autoplay: false,
         autoplaySpeed: 5000,
         infinite: true,
-        adaptiveHeight: false,
+        adaptiveHeight: true,
         appendArrows: $('.carousel-container'),
         prevArrow: $('.arrow-prev'),
         nextArrow: $('.arrow-next')

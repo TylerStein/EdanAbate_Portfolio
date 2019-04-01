@@ -6,45 +6,86 @@
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/solid.css"
-        integrity="sha384-osqezT+30O6N/vsMqwW8Ch6wKlMofqueuia2H7fePy42uC05rm1G+BUPSd2iBSJL" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/brands.css"
-        integrity="sha384-Px1uYmw7+bCkOsNAiAV5nxGKJ0Ixn5nChyW8lCK1Li1ic9nbO5pC/iXaq27X5ENt" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/fontawesome.css"
-        integrity="sha384-BzCy2fixOYd0HObpx3GMefNqdbA7Qjcc91RgYeDjrHTIEXqiF00jKvgQG0+zY/7I" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/brands.css"
+        integrity="sha384-n9+6/aSqa9lBidZMRCQHTHKJscPq6NW4pCQBiMmHdUCvPN8ZOg2zJJTkC7WIezWv" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/fontawesome.css"
+        integrity="sha384-vd1e11sR28tEK9YANUtpIOdjGW14pS87bUBuOIoBILVWLFnS+MCX9T6MMf0VdPGq" crossorigin="anonymous">
 
     <link href="css/index.css" rel="stylesheet">
     <link href="css/navbar.css" rel="stylesheet">
     <link href="css/layout.css" rel="stylesheet">
+    <link href="css/contact.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/contact.js" type="text/javascript"></script>
 </head>
 
-<body>
+<body class="background-white">
     <div class="navbar background-gray">
         <div class="navheader color-white">
-            <span class="color-white font-bold">Edan</span> <span class="color-red">Abate</span>
+            <div>
+                <span class="color-white font-bold">Edan</span> <span class="color-red">Abate</span>
+            </div>
+            <div class="navicons">
+                <a href="https://www.instagram.com/edanabate/"><i class="fab fa-instagram"></i></a>
+                <a href="https://abate_latte.artstation.com/"><i class="fab fa-artstation"></i></a>
+                <a href="https://www.linkedin.com/in/edan-abate"><i class="fab fa-linkedin"></i></a>
+            </div>
         </div>
+
         <div class="navitems">
             <div class="navitem"><a href="./index.html">Gallery</a></div>
             <div class="navitem"><a href="./resume.html">Resume</a></div>
             <div class="navitem"><a class="font-bold" href="./contact.html">Contact</a></div>
         </div>
     </div>
-    <div class="content background-white">
-        <div class="subheader font-light">
+    <div class="content">
+        <div class="subheader font-light" style="margin-top: 0">
             <span class="color-blue">Email</span>
         </div>
-        <div class="summary subcontent">
-            Beep boop email sloop
+        <div class="summary limit" style="margin-top: 12px">
+            <form id="contact-form">
+                <label for="name">Full Name</label>
+                <input type="text" class="wide" id="name"/>
+
+                <label for="email">Email</label>
+                <input type="text" class="wide" id="email"/>
+                
+                <label for="message">Message</label>
+                <textarea id="message"></textarea>
+                
+                <div class="button-bar wide">
+                    <button class="email-submit" type="submit" from="contact-form" id="email-submit">
+                        Send
+                    </button>
+                </div>
+            </form>
         </div>
         <div class="subheader font-light">
             <span class="color-red">Social Media</span>
         </div>
-        <div class="summary subcontent">
-            <a class="dark">LinkedIn</a>
-            <br/>
-            <a class="dark">Instagram</a>
-            <br/>
-            <a class="dark">Artstation</a>
+        <div class="summary socmed-links limit">
+            <div class="button-bar wide">
+                <a href="https://abate_latte.artstation.com/">
+                    <button>
+                        <i class="fab fa-artstation" style="margin-right: 12px"></i>Artstation
+                    </button>
+                </a>
+            </div>
+            <div class="button-bar wide">
+                <a href="https://www.instagram.com/edanabate/">
+                    <button>
+                        <i class="fab fa-instagram" style="margin-right: 12px"></i>Instagram
+                    </button>
+                </a>
+            </div>
+            <div class="button-bar wide">
+                <a href="https://www.linkedin.com/in/edan-abate">
+                    <button>
+                        <i class="fab fa-linkedin" style="margin-right: 12px"></i>LinkedIn
+                    </button>
+                </a>
+            </div>
         </div>
     </div>
 </body>

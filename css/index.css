@@ -27,19 +27,15 @@ body {
 }
 
 .content {
-    overflow-x: hidden;
     padding: 24px;
-    position: relative;
-    top: 112px;
-    min-height: calc(100vh - 160px);
 }
 
 .content.no-padding {
     padding: 0;
-    min-height: calc(100vh - 112px);
 }
 
 a {
+    cursor: pointer;
     text-decoration: none;
     color: #F0F0F0;
 }

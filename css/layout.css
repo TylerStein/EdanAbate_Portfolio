@@ -2,6 +2,10 @@
     font-size: 20px;
 }
 
+.summary.limit {
+    max-width: 36em;
+}
+
 .subheader {
     margin-top: 42px;
     font-size: 24px;
@@ -33,6 +37,7 @@
 }
 
 .button-bar button {
+    cursor: pointer;
     margin-bottom: 12px;
     width: 192px;
     height: 42px;
@@ -51,4 +56,30 @@
     flex-direction: column;
     align-content: center;
     align-items: center
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: auto;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.row div {
+    vertical-align: middle;
+}
+
+.row .button-bar button {
+    margin-bottom: 0;
+}
+
+.socmed-links div {
+    margin: 0.6em 0;
+    height: auto;
+}
+
+.socmed-links button {
+    margin: 0;
 }
