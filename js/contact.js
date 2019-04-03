@@ -17,11 +17,11 @@ function sendEmail(name, email, message, cb) {
         data: JSON.stringify(data),
         success: function(data, textStatus, jqxhr) {
             console.log('ajax response', data);
-            cb();
+            cb(true);
         },
         error: function(jqxhr, textStatus, errorThrown) {
             console.log('ajax errror', errorThrown);
-            cb();
+            cb(false);
         }
     });
 }
@@ -40,7 +40,9 @@ $(document).ready(function() {
             && email && email.length > 0
             && message && message.length > 0) {
                 submitBtn.prop('disabled', true);
-                sendEmail(name, email, message, () => {
+                sendEmail(name, email, message, (ok) => {
+                    if (ok) alert('Your message has been sent, thanks!');
+                    else alert('There was a problem sending your message, please try again in a few minutes.')
                     submitBtn.prop('disabled', false);
                 });
             }

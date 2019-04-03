@@ -18,7 +18,15 @@ form .row input[type="text"] {
     flex-grow: 1;
 }
 
+form .row input[type="email"] {
+    flex-grow: 1;
+}
+
 form input[type="text"].wide {
+    width: 100%;
+}
+
+form input[type="email"].wide {
     width: 100%;
 }
 
