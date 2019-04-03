@@ -3,8 +3,8 @@ $(document).ready(function() {
         autoplay: false,
         autoplaySpeed: 5000,
         infinite: true,
-        adaptiveHeight: true,
-        appendArrows: $('.carousel-container'),
+        adaptiveHeight: false,
+        appendArrows: $('.carousel'),
         prevArrow: $('.arrow-prev'),
         nextArrow: $('.arrow-next')
     });

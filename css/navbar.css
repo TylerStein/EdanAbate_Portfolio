@@ -10,6 +10,7 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    cursor: default;
 }
 
 
@@ -23,6 +24,15 @@
 
 .navitem {
     margin-right: 24px;
+}
+
+.navicons {
+    cursor: default;
+}
+
+a:hover i {
+    color: #E80C7A;
+    cursor: poninter;
 }
 
 @media only screen and (max-width: 560px) {
