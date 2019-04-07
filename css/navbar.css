@@ -1,6 +1,8 @@
 
 .navbar {
     padding: 18px;
+    height: 116px;
+    box-sizing: border-box;
 }
 
 .navheader {
@@ -36,11 +38,37 @@ a:hover i {
 }
 
 @media only screen and (max-width: 560px) {
+    .navbar {
+        height: 96px;
+    }
+
     .navheader {
         font-size: 1.8em;
     }
 
     .navheader .navicons {
         font-size: auto;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .navbar {
+        height: 172px;
+    }
+
+    .navheader {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navitems {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media only screen and (max-width: 200px) {
+    .navicons {
+        display: none;
     }
 }
