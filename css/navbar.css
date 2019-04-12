@@ -53,7 +53,7 @@ a:hover i {
 
 @media only screen and (max-width: 300px) {
     .navbar {
-        height: 172px;
+        height: 130px;
     }
 
     .navheader {
@@ -62,8 +62,7 @@ a:hover i {
     }
 
     .navitems {
-        flex-direction: column;
-        align-items: flex-start;
+        margin-top: 4px;
     }
 }
 
